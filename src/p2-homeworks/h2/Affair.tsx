@@ -14,13 +14,13 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div>
-            {
+
                 <ul>
                     <li key={props.affair._id}><span>{props.affair.name}</span>
                     <button onClick={deleteCallback}>X</button>
                     </li>
                 </ul>
-            }
+
 
         </div>
     )

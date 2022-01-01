@@ -21,16 +21,10 @@ let defaultAffairs: Array<AffairType> = [ // need to fix any
 
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => { // need to fix any
-    if (filter === 'all') return affairs
-    else if(filter === 'low'){
-        return affairs.filter(t => t.priority === 'low');
+    if (filter === 'all') {
+        return affairs
     }
-    else if(filter === 'middle'){
-        return affairs.filter(t => t.priority === 'middle')
-    }
-    else if(filter === 'high'){
-        return affairs.filter(t => t.priority === 'high')
-    }// need to fix
+    return affairs.filter(t => t.priority === filter);
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
     return affairs.filter(t => t._id !== _id);
