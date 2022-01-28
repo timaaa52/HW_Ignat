@@ -1,5 +1,12 @@
 .default {
-
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
 }
 
 .red {
