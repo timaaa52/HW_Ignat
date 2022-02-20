@@ -1,7 +1,7 @@
 {
-  "name": "ignat-hw",
+  "name": "tima",
   "homepage": "https://timaaa52.github.io/HW_Ignat/",
-  "version": "0.1.0",
+  "version": "2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -49,5 +49,10 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "description": "2",
+  "main": "2",
+  "repository": "https://github.com/timaaa52/HW_Ignat.git",
+  "author": "Tima <tima52rus@gmail.com>",
+  "license": "MIT"
 }

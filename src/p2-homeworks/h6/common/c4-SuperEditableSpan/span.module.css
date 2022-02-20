@@ -1,0 +1,9 @@
+.item {
+    border: 2px solid;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 123px;
+    text-align: center;
+    padding: 10px;
+    background-color: aquamarine;
+}
