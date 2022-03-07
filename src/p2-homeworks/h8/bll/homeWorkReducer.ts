@@ -5,13 +5,7 @@ export const homeWorkReducer = (state: UserType[], action: {type: string, payloa
         case 'sort': {
             // need to fix
             let copyState = [...state];
-            const sortFn = (a: UserType, b: UserType) => {
-                if(a.name > b.name) {
-                    return 1
-                } else {
-                    return -1
-                }
-            };
+            const sortFn = (a: UserType, b: UserType) => a.name > b.name ? 1 : -1;
             if(action.payload === 'up') return copyState.sort(sortFn);
             if(action.payload === 'down') return copyState.sort(sortFn).reverse();
             return state;

@@ -1,7 +1,6 @@
 {
   "name": "tima",
   "homepage": "https://timaaa52.github.io/HW_Ignat/",
-  "version": "2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
