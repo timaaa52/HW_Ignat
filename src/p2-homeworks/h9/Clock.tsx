@@ -1,20 +1,21 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import internal from "stream";
 
 function Clock() {
-    const [timerId, setTimerId] = useState<number>(0)
+    const [timerId, setTimerId] = useState<number[]>([])
     const [date, setDate] = useState<Date>(new Date())
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        clearInterval(timerId);
+        timerId.forEach(e => clearInterval(e))
         // stop
     }
     const start = () => {
         const id: number = window.setInterval(() => {
             setDate(new Date())
         }, 1000);
-        setTimerId(id)
+        setTimerId([...timerId, id])
     }
 
     const onMouseEnter = () => {
